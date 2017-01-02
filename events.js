@@ -36,3 +36,8 @@ $('#add-color').click( function (e) {
 $('#make-large').click( function (e) {
    output.addClass("hulk")
 })
+
+// add border on capture button
+$('#add-border').click( function (e) {
+   output.addClass("border")
+})
