@@ -29,15 +29,20 @@ $('#keypress-input').keyup( function(e) {
 
 // add color button changes output to blue
 $('#add-color').click( function (e) {
-   output.addClass("blue")
+   output.toggleClass("blue")
 })
 
 // increase text size on hulkify button
 $('#make-large').click( function (e) {
-   output.addClass("hulk")
+   output.toggleClass("hulk")
 })
 
 // add border on capture button
 $('#add-border').click( function (e) {
-   output.addClass("border")
+   output.toggleClass("border")
+})
+
+// round border on rounded button click
+$('#add-rounding').click( function (e) {
+   output.toggleClass("rounded")
 })

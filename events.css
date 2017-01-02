@@ -12,6 +12,10 @@
    font-style: bolder;
 }
 
-.border{
+.border {
    border: 3px solid black;
+}
+
+.rounded {
+   border-radius: 20px;
 }
