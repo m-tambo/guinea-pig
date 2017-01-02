@@ -28,3 +28,8 @@ $('#page-title').mouseout( function (e) {
 $('#keypress-input').keyup( function(e) {
    output.html($('#keypress-input').val())
 })
+
+//add color button changes output to blue
+$('#add-color').click( function (e) {
+   output.addClass("blue")
+})
