@@ -1,16 +1,15 @@
 // target the output element
-let output;
-output = $('#output-target')
+let output = $('#output-target')
 
 // display message when a section is clicked
-$('.article-section').click(function(e) {
+$('.article-section').click( function(e) {
    output.html( `
       You clicked on the ${e.target.innerHTML} section
    `)
 })
 
 // display message when mouse is over header
-$('#page-title').mouseover(function (e) {
+$('#page-title').mouseover( function (e) {
    output.html( `
       You moused over the header
    `)
@@ -18,9 +17,14 @@ $('#page-title').mouseover(function (e) {
 })
 
 // display message when mouse leaves header
-$('#page-title').mouseout(function (e) {
+$('#page-title').mouseout( function (e) {
    output.html( `
       You left the header!!
    `)
 
+})
+
+// mirror the text type into the input field
+$('#keypress-input').keyup( function(e) {
+   output.html($('#keypress-input').val())
 })
